@@ -1,8 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 int main() {
+	float acc, bb, tch, tcr, cl, nbb;
 	do {
-		float acc, bb, tch, tcr, cl, nbb;
+		
 		printf("Enter accout number(-1 to end)¡G");
 		scanf("%f", &acc);
 		printf("Enter beginning balance¡G");
@@ -19,7 +20,7 @@ int main() {
 			nbb = bb + tch - tcr;
 			printf("Balance¡G\t %f\n", nbb);
 			if (nbb > cl) {
-				printf("Credit Limit Exceeded.");
+				printf("Credit Limit Exceeded.\n");
 			}
 		}
 		else { return 0; }
